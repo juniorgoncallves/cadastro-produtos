@@ -1,10 +1,18 @@
-import "./App.css";
+import React from "react";
+
+import Navbar from "./components/navbar";
+import Rotas from "./rotas";
+
+import { HashRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Olá Mundo!!!</h1>
-    </div>
+    <HashRouter>
+      <div className="container">
+        <Navbar />
+        <Rotas />
+      </div>
+    </HashRouter>
   );
 }
 
